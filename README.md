@@ -17,4 +17,6 @@ Moving the mouse away from an animal's eye should immediately hide the full imag
 
 You'll find information about the position of each animal's eye in the comments in the HTML file.
 
-![Bullseye](img/bullseye.jpg)
+Click on the image below to see a demo.
+
+[![Bullseye](img/bullseye.jpg)](https://dciforks.github.io/UIB-interaction-bullseye/)
