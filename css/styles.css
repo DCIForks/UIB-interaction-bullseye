@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  color: white;
+}
+
+main {
+  position: relative;
+  width: 100vmin;
+  height: 100vmin;
+  background:
+    linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+    url(../img/target.svg)
+    center / cover;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vmin;
+}
+
+div {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+
+  text-align: center;
+  font-size: 15vmin;
+  text-shadow: 2px 2px 2px grey;
+}
+
+img:hover {
+  z-index: 1;
+  transition: 1s
+}
+
+img:hover + div {
+  visibility: visible;
+  z-index: 1;
+}
+
+img.bull {
+  clip-path: circle(5% at 63% 29%);
+}
+
+img.bull:hover {
+  clip-path: circle(95% at 63% 29%);
+}
+
+div.bull{
+  color: #c97;
+  clip-path: polygon(
+    58% 24%,
+    68% 24%,
+    68% 34%,
+    0 34%,
+    0 100%,
+    100% 100%,
+    100% 0,
+    0 0,
+    0 34%,
+    58% 34%
+  )
+}
+
+img.horse {
+  clip-path: circle(5% at 82% 48%);
+}
+
+img.horse:hover {
+  clip-path: circle(97% at 82% 48%);
+}
+
+div.horse{
+  clip-path: polygon(
+    77% 43%,
+    87% 43%,
+    87% 53%,
+    0 53%,
+    0 100%,
+    100% 100%,
+    100% 0,
+    0 0,
+    0 53%,
+    77% 53%
+  )
+}
+
+img.lion {
+  clip-path: circle(5% at 55% 39%);
+}
+
+img.lion:hover {
+  clip-path: circle(82% at 55% 39%);
+}
+
+div.lion{
+  color: black;
+  font-size: 13vmin;
+  clip-path: polygon(
+    50% 34%,
+    60% 34%,
+    60% 44%,
+    0% 44%,
+    0 100%,
+    100% 100%,
+    100% 0,
+    0 0,
+    0 44%,
+    50% 44%
+  )
+}
+
+img.rhinoceros {
+  clip-path: circle(5% at 50% 50%);
+}
+
+img.rhinoceros:hover {
+  clip-path: circle(71% at 50% 50%);
+}
+
+div.rhinoceros{
+  clip-path: polygon(
+    45% 45%,
+    55% 45%,
+    55% 55%,
+    0 55%,
+    0 100%,
+    100% 100%,
+    100% 0,
+    0 0,
+    0 55%,
+    45% 55%
+  )
+}
+
+h1 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 10vmin;
+}
